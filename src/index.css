@@ -29,3 +29,12 @@
     width: 98%;
     margin: 0 auto;
 }
+
+.lt{
+    color: blue;
+    background-color: whitesmoke;
+}
+.dt{
+    color: red;
+    background-color: black;
+}
