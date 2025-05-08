@@ -27,6 +27,7 @@ export default function Base() {
 
         <button onClick={()=>setTheme((oldTheme)=>oldTheme == "light" ? "dark" :"light")}>Change Color</button>
         </div>
+        <a href="">Hello</a>
         </>
     )
 }

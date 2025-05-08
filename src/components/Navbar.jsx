@@ -27,15 +27,17 @@
 //         </>
 //     )
 // }
-
-function Navbar({item}){
-    console.log(item);
+import navItems from '../data/navItem'
+import {Link} from 'react-router-dom'
+function Navbar(){
     
     return (
         <>
         <ul className="li">
-            {item.map((val,id)=>(
-                <li>{val.toUpperCase()}</li>
+            {navItems.map((val,id)=>(
+                <li>
+                    <Link to={val.url}>{val.name}</Link>
+                </li>
             ))}
         </ul>
         </>
