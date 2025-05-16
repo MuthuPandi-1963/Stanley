@@ -9,6 +9,8 @@ import Settings from './pages/Settings';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Home from './pages/Home.jsx';
+import TechStack from './pages/TechStack.jsx';
+import SingleProducts from './pages/SingleProducts.jsx';
 function App(){
   const navBarItems = ["Home" , "About" , "Settings","Sign up","Login" ,"Contact us"]
   return (
@@ -27,6 +29,8 @@ function App(){
       <Route path="settings" element={<Settings/>}/>
       <Route path="login" element={<Login/>}/>
       <Route path="profile" element={<Profile/>}/>
+      <Route path='products' element={<TechStack/>}/>
+      <Route path='products/:id' element={<SingleProducts/>} />
     </Routes>
     </>
   )
